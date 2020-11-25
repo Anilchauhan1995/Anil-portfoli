@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+	font-size: 14px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+.bg-crimos {
+    background-color: crimson;
+    color: #fff;
+    margin-top: 0px;
+   
+
+}
+@keyframes animate{
+    0%{
+        margin-top:-50px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+#navbarSupportedContent ul.navbar-nav.ml-auto li a {
+    color: #fff;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-crimos a.navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+.bg-image {
+    background-image: url("file:///C:/Users/anil/Desktop/javascript/images/6-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    height:665px;
+}
+.text-1 {
+    font-size: 21px;
+}
+.text-2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.text-3 {
+    font-size: 24px;
+}
+.crimson{
+    color: crimson;
+    font-weight: 500;
+}
+.bg-crimos.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+     transition: all 0.5s linear;
+    top: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+     animation: animate 0.5s linear;
+}
+
+
+.carousel{
+    display: block;
+}
+.carousel .card{
+    /*background-color: red;*/
+    text-align: center;
+    color: #fff;
+    line-height: 250px;
+    margin: 20px 0;
+    font-size: 90px;
+    font-weight: 700;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+.carousel .card-1{
+    background-color: #ed1c24;
+}
+.carousel .card-2{
+    background-color: #0072bc;
+}
+.carousel .card-3{
+    background-color: #39b54a;
+}
+.carousel .card-4{
+    background-color: #f26522;
+}
+.carousel .card-5{
+    background-color: #630460;
+}
+ input[type=text]{
+    border:none;
+    border-bottom: 1px solid lightblue;
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+}
+input[type=text] + label:before{
+    content: attr(placeholder);
+    font-size: 1.5em;
+    color: #999;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    left: 10px;
+}
+input[type=text] + label{
+    font-size: 1.5em;
+    color:#ddd;
+    margin-top: -1.8em;
+    pointer-events: none;
+    display: block;
+    position: relative;
+}
+input[type=text]:focus{
+    border-color: #287ae6;
+}
+input[type=text]:focus + label:before {
+    color: #287ae6;
+    transform: translate(0,-1.5em);
+        left: 0;
+}

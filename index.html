@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-crimos">
+        
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <section id="Anil">
+          <div class="container-fluid">
+            <div class="row bg-image">
+              <div class="col-md-6">
+                  <div class="text_header">
+                      <div class="text-1">Hello, my name is</div>
+                      <div class="text-2">Anil Chauhan</div>
+                      <div class="text-3">And i'm a  <span class="crimson typing">UI/UX designrer</span></div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <div class="">
+                </div>
+              </div>
+              </div>
+          </div>
+      </section>
+      <section id="custom-carousel" >
+        <div class="container-fluid">
+          <div class="row" id="demos">
+        <div class="col-md-12">
+        <div class="wrapper ">
+          <div class="carousel owl-carousel owl-theme">
+            <div class="card card-1">A</div>
+            <div class="card card-2">B</div>
+            <div class="card card-3">C</div>
+            <div class="card card-4">D</div>
+            <div class="card card-5">E</div>
+          </div>
+          </div>
+
+      </section>
+<section id="form">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form_image">
+          
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form_div">
+        <form>
+          <div class="form-group">
+          <input type="text" name="">
+          <label placeholder="Email"></label>
+          </div>
+          <div class="form-group">
+            <label>date of birth</label>
+            <input type="date" name="">
+          </div>
+        </form>  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <form id="form1" runat="server">
+        <input type='file' id="imgInp" />
+        <img id="imgInp1" src="images/6-scaled.jpg" width="100" alt="your image" />
+        <br>
+        <br>
+        <input type='file' id="imgInp2" />
+        <img id="imgInp21" src="images/bg-1.jpg" width="100" alt="your image" />
+      
+    </form>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<script type="text/javascript">
+   
+function readURL(input) {
+let toAdd = "#"+$(input).attr("id")+"1"
+if (input.files && input.files[0]) {
+var reader = new FileReader();
+
+reader.onload = function (e) {
+console.log(toAdd)
+$(toAdd).attr('src', e.target.result);
+}
+
+reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("input").change(function(){
+readURL(this);
+});
+</script>
+
+
+
+
+
+
+    <script>
+      $(document).ready( function(){
+        $(window).scroll(function(){
+          if( this.scrollY > 200){
+            $(".navbar").addClass("sticky");
+          }else{
+            $(".navbar").removeClass("sticky");
+          }
+        });
+      });
+      var typed = new Typed(".typing",{
+        strings:["UI" , "UX" , "UI UX designer"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true,
+      }); 
+
+</script>
+<script>
+
+
+      $(".carousel").owlCarousel({
+         margin:10,  
+         loop:true,
+         autoplay:true,
+         autoplay:true,
+         autoplayTimeout:2000, 
+         autoplayHoverPause:true,
+         responsive: {
+          0:{
+            items: 1,
+            nav: false
+          },
+          600:{
+            items: 2,
+            nav: false
+          },
+          1000:{
+            items: 3,
+            nav: false
+          }   
+         }
+      });
+
+    </script>
+</body>
+</html>
