@@ -31,7 +31,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-crimos a.navbar-brand {
     font-weight: 700;
 }
 .bg-image {
+<<<<<<< HEAD
     background-image: url('./images/6-scaled.jpg');
+=======
+    background-image: url("images/6-scaled.jpg");
+>>>>>>> 95d3990c319f4abb6e516e483b716b87cc36204a
     background-position: center;
     background-size: cover;
     padding: 30px;
