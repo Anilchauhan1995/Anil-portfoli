@@ -15,6 +15,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
+  <div class="loder" style="position: absolute;top: 50%;left: 50%;">
+ <div class="image" style=" background-image: url(img/source.gif);">&nbsp;</div>
+</div>
     <nav class="navbar navbar-expand-lg navbar-light bg-crimos">
         
         <a class="navbar-brand" href="#">Portfolio</a>
@@ -423,6 +426,12 @@ readURL(this);
         backSpeed:60,
         loop:true,
       }); 
+
+$(window).on('load',function() {
+  $(".loder").fadeOut(1000)
+  $(".image").delay(5000).fadeOut()
+  $('body').delay().css({'overflow':'visible'});
+});
 
 </script>
 <script>

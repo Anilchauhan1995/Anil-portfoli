@@ -89,7 +89,7 @@ label #sidebar_btn:hover{
 	margin-left: 170px;
 	width: 80px;
 }
-.content{
+.bg-img{
 	margin-left: 250px;
 	background: url("6-scaled.jpg") no-repeat;
 	background-position: center;
@@ -105,7 +105,56 @@ label #sidebar_btn:hover{
 input#check {
     display: none;
 }
+.fade{
+	display: none;
+}
+.modal.fade.in{
+	display: block;
+}
 
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
+.fade.in {
+    opacity: 1;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+.modal-backdrop.in {
 
+    opacity: .5;
+}
 
+.custom-tab ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.tab-content{
+	display: none;
+}
+.tab-content.active{
+	display: block;
+}
