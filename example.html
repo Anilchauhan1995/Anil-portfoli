@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery Ajax() method</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type = "text/javascript" language = "javascript">
+   $(document).ready(function() {
+     $('.loader').click(function(){
+        $.ajax('your-URL',{
+          success: function (data, status, xhr) {
+              $('p').append(data);
+          }
+        });
+     });
+
+   });
+
+</script>
+</head>
+<body>
+
+<p>jQuery <span>has()</span> method.</p>
+<input type = "button" class = "loader" value = "Load Data" />
+<p></p>
+</body>
+</html>

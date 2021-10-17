@@ -1,0 +1,433 @@
+body{
+    margin: 0;
+    padding: 0;
+	font-size: 14px;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+.bg-crimos {
+    background-color: crimson;
+    color: #fff;
+    margin-top: 0px;
+   
+
+}
+@keyframes animate{
+    0%{
+        margin-top:-50px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+#navbarSupportedContent ul.navbar-nav.ml-auto li a {
+    color: #fff;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-crimos a.navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+
+.bg-image {
+    background-image: url("images/6-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    height:665px;
+}
+.text-1 {
+    font-size: 21px;
+}
+.text-2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.text-3 {
+    font-size: 24px;
+}
+.crimson{
+    color: crimson;
+    font-weight: 500;
+}
+.bg-crimos.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+     transition: all 0.5s linear;
+    top: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+     animation: animate 0.5s linear;
+}
+
+
+.carousel{
+    display: block;
+}
+.carousel .card{
+    /*background-color: red;*/
+    text-align: center;
+    /*color: #fff;*/
+    margin: 20px 0;
+    font-weight: 700;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s linear;
+}
+.card:hover {
+    background-color: crimson;
+    color: #fff;
+}
+.owl-dot.active{
+	width: 35px;
+	border-radius: 14px;
+}
+.owl-dot.active , .owl-dot:hover{
+	background-color: crimson;
+}
+.carousel .card-1{
+    background-color: #ed1c24;
+}
+.carousel .card-2{
+    background-color: #0072bc;
+}
+.carousel .card-3{
+    background-color: #39b54a;
+}
+.carousel .card-4{
+    background-color: #f26522;
+}
+.carousel .card-5{
+    background-color: #630460;
+}
+/* input[type=text]{
+    border:none;
+    border-bottom: 1px solid lightblue;
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+}
+input[type=text] + label:before{
+    content: attr(placeholder);
+    font-size: 1.5em;
+    color: #999;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    left: 10px;
+}
+input[type=text] + label{
+    font-size: 1.5em;
+    color:#ddd;
+    margin-top: -1.8em;
+    pointer-events: none;
+    display: block;
+    position: relative;
+}
+input[type=text]:focus{
+    border-color: #287ae6;
+}
+input[type=text]:focus + label:before {
+    color: #287ae6;
+    transform: translate(0,-1.5em);
+        left: 0;
+}*/
+/*about section css*/
+.pd-100{
+	padding: 100px 0px;
+}
+.pd-50 {
+    padding: 50px 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.line span {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.line span:before {
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 2px;
+	background-color: #111;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.line span:after {
+	content: "who i am";
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	bottom: -12px;
+	padding: 0px 5px;
+	font-size: 20px;
+	transform: translateX(-50%);
+}
+.about_me.text {
+    text-align: justify;
+}
+.me-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+.color-crimson{
+	color: crimson;
+}
+
+/*End about section css*/
+
+
+/*Skill section css*/
+.Skill-line span {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+.Skill-line span:before {
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 2px;
+	background-color: #111;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.Skill-line span:after {
+	content: "what i know";
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	bottom: -12px;
+	padding: 0px 5px;
+	font-size: 20px;
+	transform: translateX(-50%);
+}
+.progressbars-div {
+    margin-bottom: 1em;
+}
+/*EndSkill section css*/
+
+/*myteam section css*/
+.team-line span {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+.team-line span:before {
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 2px;
+	background-color: #111;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.team-line span:after {
+	content: "who with me ";
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	bottom: -12px;
+	padding: 0px 5px;
+	font-size: 20px;
+	transform: translateX(-50%);
+}
+.card .img-fluid{
+	max-height: 270px;
+	height: 270px;
+}
+/*End myteam section css*/
+
+/*Contact section css*/
+.contact-line span {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+.contact-line span:before {
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 2px;
+	background-color: #111;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+.contact-line span:after {
+	content: "Get in Touch ";
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	bottom: -12px;
+	padding: 0px 5px;
+	font-size: 20px;
+	transform: translateX(-50%);
+}
+.user-icons ul {
+    list-style: none;
+    padding: 0;
+}
+.user-icons ul li {
+    margin-bottom: 10px;
+}
+
+.user-icons ul li i {
+    color: crimson;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.user-icons ul li  span {display: inline-flex;vertical-align: middle;}
+
+/*End Contact section css*/
+
+/*footer css*/
+footer{
+	background-color: #111;
+	color: #fff;
+	padding: 10px 0px;
+}
+/*footer css*/
+.loder {
+    position:fixed!important;
+    top: 0!important;
+    left: 0!important;
+    right: 0!important;
+    bottom: 0!important;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+}
+  .image {
+    width: 200px;
+    height: 200px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+div#accordionExample h5:not(.collapsed) {
+    color: #dc143c;
+    position: relative;
+}
+div#accordionExample h5:not(.collapsed):before,h5.accordion-header[aria-expanded=true]:after , h5.accordion-header[aria-expanded=true]:before {
+    width: 13px;
+    height: 3px;
+    background: #dc143c;
+    top: calc(50% - 1.5px);
+    transition: 0.35s;
+    z-index: 1;
+    right: 0;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+}
+h5[aria-expanded]:before {
+    transform: rotate( 
+180deg);
+}
+h5.accordion-header {
+    position: relative;
+    letter-spacing: 0.35px;
+    transition: 0.5s;
+}
+.accordion-header.collapsed:before {
+    transform: rotate(  90deg);
+}
+.accordion-header.collapsed:before ,.accordion-header.collapsed:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 13px;
+    height: 3px;
+    top: calc(50% - 1.5px);
+    transition: 0.35s;
+    z-index: 1;
+    right: 0;
+    pointer-events: none;
+}
+
+.accordion-header.collapsed:after {
+    transform: rotate(0deg);
+}
+@media (max-width: 991px) {
+    .navbar-light .navbar-toggler-icon {
+    position: relative;
+    background-image: unset;
+    border: none;
+    box-shadow: unset!important;
+    height: 2px;
+    background-color: yellow;
+    outline: none!important;
+}
+
+button.navbar-toggler.collapsed {
+    border: none;
+    outline: none!important;
+}
+
+button.navbar-toggler {
+    outline: none;
+    border: none;
+}
+button.navbar-toggler[aria-expanded="true"]>span.navbar-toggler-icon:before {
+    transform: rotate(45deg);
+    top: 0px;
+}
+button.navbar-toggler[aria-expanded="true"]>span.navbar-toggler-icon:after {
+    transform: rotate(-45deg);
+    left: -2px;
+    top: 0px;
+}
+.navbar-light .navbar-toggler-icon:before,
+ .navbar-light .navbar-toggler-icon:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 100%;
+    background-color: yellow;
+    height: 2px;
+    transition: all .35s;
+    left: 0;
+ }
+.navbar-toggler[aria-expanded="true"] span {
+    background: transparent;
+}
+.navbar-light .navbar-toggler-icon:after {
+    top: 9px;
+}
+
+div#navbarSupportedContent {
+    position: fixed;
+    background-color: #dc143c;
+    padding: 20px;
+    min-height: 100vh;
+    top: 55px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 65px);
+    z-index: 9999;
+    display: block;
+    transition: 0.5s;
+}
+
+div#navbarSupportedContent.show {
+    left: 0;
+}
+}
